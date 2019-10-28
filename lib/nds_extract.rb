@@ -19,7 +19,7 @@ def directors_totals(nds)
   #directors_database[row_index][:movies][:worldwide_gross]
 row_index = 0
 while row_index < directors_database.length do
-  
+  puts directors_database[row_index][:movies][:worldwide_gross]
   row_index += 1
 end
 end
