@@ -16,10 +16,22 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   require 'pp'
   #director_name = directors_database[row_index][:name]
-  #directors_database[row_index][:movies][:worldwide_gross]
-row_index = 0
-while row_index < directors_database.length do
-  puts directors_database[row_index][:movies][0][:worldwide_gross]
+  #directors_database[row_index][:movies][movie_index][:worldwide_gross]
+  row_index = 0
+  while row_index < directors_database.length do
+  
+    movie_index = 0
+    director_name = directors_database[row_index][:name]
+    movie_list = directors_database[row_index][:movies]
+  
+    while movie_index < movie_list.length do
+    
+    result[director_name] = movie_list[movie_index][:worldwide_gross]
+    
+    movie_index += 1
+    end
+  
   row_index += 1
-end
+  
+  end
 end
