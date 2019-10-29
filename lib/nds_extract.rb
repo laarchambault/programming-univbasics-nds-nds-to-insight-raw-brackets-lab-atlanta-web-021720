@@ -14,7 +14,6 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  require 'pp'
   #director_name = directors_database[row_index][:name]
   #directors_database[row_index][:movies][movie_index][:worldwide_gross]
   row_index = 0
